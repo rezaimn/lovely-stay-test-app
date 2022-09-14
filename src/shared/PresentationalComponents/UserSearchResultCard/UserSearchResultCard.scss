@@ -1,0 +1,36 @@
+
+@import "src/index";
+
+.user-card{
+  margin-top: 30px;
+  flex-basis: 22%;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  display: flex;
+  height: 100px;
+  background: #fff;
+  cursor: pointer;
+  &:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  }
+  &__avatar{
+    img{
+      height: 100px;
+      width: 100px;
+      border-bottom-left-radius: 10px;
+      border-top-left-radius: 10px;
+    }
+  }
+  &__details{
+    padding: 0px 20px;
+    &__title{
+      margin: 10px 0;
+    }
+    &__url {
+      width: 12vw;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}

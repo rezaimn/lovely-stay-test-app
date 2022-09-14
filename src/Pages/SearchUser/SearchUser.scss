@@ -1,0 +1,31 @@
+
+.search-user {
+  &__search-results {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: calc(100vh - 200px);
+    overflow-y: auto;
+
+    &__no-data {
+      margin-top: 30vh;
+    }
+  }
+
+  &__paginator {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    background: #fff;
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 815px) {
+  .search-user {
+    &__search-results {
+      height: calc(100vh - 240px);
+    }
+  }
+}
